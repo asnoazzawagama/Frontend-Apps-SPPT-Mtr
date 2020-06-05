@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Halaman Utama" />
+
+    <item
+        android:id="@+id/nav_penyampaian"
+        android:icon="@drawable/menu_penyampaian"
+        android:title="Penyampaian" />
+    <item
+        android:id="@+id/nav_pembayaran"
+        android:icon="@drawable/menu_payment"
+        android:title="Pembayaran" />
+    <item
+        android:id="@+id/nav_tunggakan"
+        android:icon="@drawable/menu_list"
+        android:title="Tunggakan" />
+</menu>

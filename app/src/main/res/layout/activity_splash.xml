@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/image_logo_mtr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:padding="0dp"
+            android:src="@drawable/mataram" />
+
+        <TextView
+            android:id="@+id/tv1_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/image_logo_mtr"
+            android:text=" Ketahui Langsung Informasi Ketetapan "
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv2_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@+id/tv1_home"
+            android:layout_toEndOf="@+id/image_logo_mtr"
+            android:text="SPPT PBB Kota Mataram"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/tv2_home"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="100dp"
+            android:foregroundGravity="center"
+            android:layout_toEndOf="@+id/image_logo_mtr"
+            android:layout_marginTop="5dp"
+            android:id="@+id/view_home"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="0sp"
+        android:id="@+id/image_splash"
+        android:src="@drawable/sppt_logo_image"/>
+
+    <TextView
+        android:id="@+id/text_splash3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:text="Aplikasi Layanan Resmi BKD Kota Mataram "
+        android:textColor="@color/colorBlack"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

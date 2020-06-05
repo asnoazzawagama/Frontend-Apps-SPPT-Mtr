@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".BayarActivity">
+
+          <TextView
+              android:id="@+id/info_wp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Wajib Pajak"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:gravity="left"/>
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/info_wp"
+            android:gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="125dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="10dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/home_panel">
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="NAMA :"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="ALAMAT :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="KELURAHAN :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="RT :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="RW :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="KECAMATAN :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="KABUPATEN/KOTA :"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wp_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pemb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:gravity="left"
+        android:text="Pembayaran"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="11sp"
+        android:layout_below="@+id/rl_2"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/pemb"
+        android:gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/home_panel"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Tanggal Jatuh Tempo :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Tagihan :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Tarif Denda per Bulan :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Biaya Denda :"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text="Biaya Admin :"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tgl_tempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tagihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/denda_perbulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/denda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/biaya_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="0dp"
+                android:text=""
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tottagihan"
+            android:layout_marginTop="7dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_uang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/colorTint"
+                android:gravity="center"
+                android:hint="Jumlah Uang"
+                android:textColor="@color/colorTint"
+                android:textColorHint="@color/colorTint"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_uang"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:onClick="kembalian"
+                        android:src="@drawable/ic_refresh_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/input_kembali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="0dp"
+                        android:backgroundTint="@color/colorTint"
+                        android:gravity="center"
+                        android:hint="Kembali"
+                        android:textColor="@color/colorTint"
+                        android:textColorHint="@color/colorTint"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn"
+                android:layout_below="@id/rl_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="-30dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_cetak"
+                        android:layout_width="150dp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="170dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="170dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_1"
+                        android:onClick="cetak_bayar"
+                        android:text="Cetak"
+                        android:textColor="@color/colorAccent" />
+<!--                    <Button-->
+<!--                        android:id="@+id/btnConnect"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="20sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginStart="170dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="170dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="@drawable/btn_1"-->
+<!--                        android:onClick="cetak_bayar"-->
+<!--                        android:text="Connect"-->
+<!--                        android:textColor="@color/colorAccent" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="-30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="-1dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_bayar"
+                        android:layout_width="150dp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="170dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="170dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/btn_1"
+                        android:onClick="bayar"
+                        android:text="Bayar"
+                        android:textColor="@color/colorAccent" />
+<!--                    <Button-->
+<!--                        android:id="@+id/btnDisconnect"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="20sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginStart="170dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="170dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="@drawable/btn_1"-->
+<!--                        android:onClick="cetak_bayar"-->
+<!--                        android:text="Disconnect"-->
+<!--                        android:textColor="@color/colorAccent" />-->
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_1"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Total Tagihan"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tottagihan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text=""
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:text="label Printer Name"-->
+<!--        android:layout_marginStart="130dp"-->
+<!--        android:id="@+id/lblPrinterName"-->
+<!--        />-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorAccent"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav2" />
+</RelativeLayout>
